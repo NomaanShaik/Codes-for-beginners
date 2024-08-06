@@ -1,0 +1,19 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Swapping {
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int n1= sc.nextInt();
+        Scanner sc1= new Scanner(System.in);
+        System.out.println("Enter a another number: ");
+        int n2= sc1.nextInt();
+        int t; // it is a temporary variable
+        System.out.println(n1+","+n2);
+        t=n2; // after assigning the n2 in t, the n2 variable becomes empty and can store any value
+        n2=n1; // assigning the n1 value to n2, the n1 variable becomes empty and can store any value
+        n1=t; // Lastly assigning the t value to n1, which makes t empty but we care only about n1 and n2. We get swapped output
+        System.out.println(n1+","+n2);
+    }
+}
