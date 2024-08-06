@@ -1,0 +1,19 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Swapping {
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int n1= sc.nextInt();
+        Scanner sc1= new Scanner(System.in);
+        System.out.println("Enter a another number: ");
+        int n2= sc1.nextInt();
+        int t;
+        System.out.println(n1+","+n2);
+        n1=n1-n2;
+        n2=n1+n2;
+        n1=n2-n1;
+        System.out.println(n1+","+n2);
+    }
+}
